@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Đăng ký</title>
+</head>
+<body>
+    <h2>Đăng ký</h2>
+    
+    <form th:action="@{/register}" method="post">
+        <div>
+            <label for="username">Tên người dùng:</label>
+            <input type="text" id="mand" name="username" required>
+        </div>
+                <div>
+            <label for="username">Tên người dùng:</label>
+            <input type="text" id="mand" name="username" required>
+        </div>
+        
+        
+        <div>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="matkhau" name="password" required>
+        </div>
+        
+        <div>
+            <label for="confirmPassword">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        
+        <button type="submit">Đăng ký</button>
+    </form>
+</body>
+</html>
